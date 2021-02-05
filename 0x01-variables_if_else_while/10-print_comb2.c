@@ -15,7 +15,7 @@ int main(void)
 		{
 			putchar(numberLeft);
 			putchar(numberRight);
-			if (!(numberRight == 57 && numberLeft == 57 ))
+			if (!(numberRight == 57 && numberLeft == 57))
 			{
 				putchar(',');
 				putchar(' ');
