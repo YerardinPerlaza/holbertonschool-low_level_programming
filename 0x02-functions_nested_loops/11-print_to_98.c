@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * print_to_98 - check the code for Holberton School students.
  *
  *@n: int
  *
