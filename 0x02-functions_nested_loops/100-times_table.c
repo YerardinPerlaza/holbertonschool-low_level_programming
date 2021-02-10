@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * print_times_table - check the code for Holberton School students.
  *
@@ -11,7 +10,7 @@ void print_times_table(int n)
 {
 	int fila, columna, mult;
 
-	if (n > 0 && n <= 15)
+	if (n > 0 && n < 15)
 	{
 		for (fila = 0; fila <= n; fila++)
 		{
