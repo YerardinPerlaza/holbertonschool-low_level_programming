@@ -7,16 +7,16 @@
 
 int main(void)
 {
-	int a;
-	int b;
+	long a;
+	long b;
 	int n;
 
 	a = 1;
 	b = 2;
 	n = 50;
-	printf("%d", a);
+	printf("%ld", a);
 	printf(", ");
-	printf("%d", b);
+	printf("%ld", b);
 	printf(", ");
 
 	for (n = 3; n <= 50; n++)
@@ -24,13 +24,13 @@ int main(void)
 		if ((n % 2) != 0)
 		{
 			a = (a + b);
-			printf("%d", a);
+			printf("%ld", a);
 			printf(", ");
 		}
 		else
 		{
 			b = (b + a);
-			printf("%d", b);
+			printf("%ld", b);
 			if (n < 50)
 				printf(", ");
 		}
