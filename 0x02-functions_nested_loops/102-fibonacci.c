@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -30,7 +29,7 @@ int main(void)
 		}
 		else
 		{
-			b = ( b + a);
+			b = (b + a);
 			printf("%d", b);
 			if (n < 50)
 				printf(", ");
