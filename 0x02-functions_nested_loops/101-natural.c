@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "holberton.h"
-
 /**
  * main - check the code for Holberton School students.
  *
@@ -8,9 +7,8 @@
  */
 int main(void)
 {
-	int n, a, suma;
+	int n, a;
 	n = 0;
-	a = 0;
 
 	while (n < 1024)
 	{
