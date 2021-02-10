@@ -14,10 +14,7 @@ void print_times_table(int n)
 	{
 		for (fila = 0; fila <= n; fila++)
 		{
-			_putchar('0');
-			_putchar(',');
-			_putchar(' ');
-			for (columna = 1; columna <= n; columna++)
+			for (columna = 0; columna <= n; columna++)
 			{
 				mult = (fila * columna);
 				if ((mult / 100) > 0)
