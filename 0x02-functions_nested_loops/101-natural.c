@@ -8,8 +8,8 @@
 int main(void)
 {
 	int n, a;
-	n = 0;
 
+	n = 0;
 	while (n < 1024)
 	{
 		if ((n % 3) == 0 || (n % 5) == 0)
