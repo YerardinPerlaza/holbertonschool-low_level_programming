@@ -11,20 +11,21 @@ void print_triangle(int size)
 {
 	int fila;
 	int columna;
+	int matriz;
 
+	matriz = size;
 	if (size > 0)
 	{
-		for (fila = 0; fila < size; fila++)
+		for (fila = 1; fila <= size; fila++)
 		{
-			for (columna = 0; columna < size; columna++)
+			for (columna = 1; columna <= size; columna++)
 			{
-				_putchar('#');
-				while (columna < size)
-				{
-					_putchar('.');
-					columna--;
-				}
+				if (columna < matriz)
+					_putchar(' ');
+				else
+					_putchar('#');
 			}
+			matriz = (matriz - 1);
 			_putchar('\n');
 		}
 	}
