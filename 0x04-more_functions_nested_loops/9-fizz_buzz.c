@@ -10,28 +10,17 @@ int main(void)
 {
 	int n;
 
-	for (n = 1; n <= 100; n++)
+	printf("1");
+	for (n = 2; n <= 100; n++)
 	{
 		if (((n % 3) == 0 && ((n % 5) == 0)))
-		{
-			printf("%s", "FizzBuzz");
-			printf(" ");
-		}
+			printf(" %s", "FizzBuzz");
 		else if ((n % 3) == 0)
-		{
-			printf("%s", "Fizz");
-			printf(" ");
-		}
+			printf(" %s", "Fizz");
 		else if ((n % 5) == 0)
-		{
-			printf("%s", "Buzz");
-			printf(" ");
-		}
+			printf(" %s", "Buzz");
 		else
-		{
-			printf("%d", n);
-			printf(" ");
-		}
+			printf(" %d", n);
 	}
 	printf("\n");
 	return (0);
