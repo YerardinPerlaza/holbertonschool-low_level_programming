@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _puts - check the code for Holberton School students.
+ * puts_half - check the code for Holberton School students.
  *
  *@str: char
  *
@@ -25,5 +25,5 @@ void puts_half(char *str)
 		_putchar(*str);
 		str++;
 	}
-     	_putchar('\n');
+	_putchar('\n');
 }
