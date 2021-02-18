@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * *string_toupper - check the code for Holberton School students.
+ *
+ *@s:char
  *
  * Return: Always 0.
  */
