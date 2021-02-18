@@ -1,0 +1,1 @@
+Second project learning pointer strings and arrays
