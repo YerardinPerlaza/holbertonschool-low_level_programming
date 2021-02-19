@@ -2,28 +2,26 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * reverse_array - check the code for Holberton School students.
+ *
+ *@a: int
+ *@n: int
  *
  * Return: nothing.
  */
 void reverse_array(int *a, int n)
 {
-	int reverse;
-	int i, ind, rev;
+	int *start = a;
+	int temp;
 
-	for (i = 0; i < n; i++)
-	{
-	}
+	a += n - 1;
 
-	rev=0;
-	ind = n - 1;
-	while (ind >= 0)
+	while (start <= a)
 	{
-		reverse[rev] = a[ind];
-		rev++;
-		ind--;
-	}
-	for (i = 0; i < n; i++)
-	{
+		temp = *start;
+		*start = *a;
+		*a = temp;
+		start++;
+		a--;
 	}
 }
