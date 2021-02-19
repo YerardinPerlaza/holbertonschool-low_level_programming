@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * *leet - check the code for Holberton School students.
+ *
+ *@str: char
  *
  * Return: Always 0.
  */
