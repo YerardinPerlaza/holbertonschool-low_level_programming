@@ -21,11 +21,11 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == *new)
 			{
-				return (char *)s;
+				return (s);
 			}
 			new++;
 		}
 		s++;
 	}
-	return (s);
+	return (0);
 }
