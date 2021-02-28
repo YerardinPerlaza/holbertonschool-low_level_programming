@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 2 || argc > 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
 	mul = (atoi(argv[1]) * atoi(argv[2]));
