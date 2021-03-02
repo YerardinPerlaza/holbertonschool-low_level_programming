@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	for (i = 0; i <= largo; i++)
 		copy[i] = str[i];
 
-	if (copy == NULL)
+	if (copy == 0)
 		return (NULL);
 
 	return (copy);
