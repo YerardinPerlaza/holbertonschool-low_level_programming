@@ -20,7 +20,7 @@ char *_strdup(char *str)
 		largo++;
 	}
 
-	copy = malloc(sizeof(char) * (largo + 1));
+	copy = malloc(sizeof(char) * largo + 1);
 	for (i = 0; i <= largo; i++)
 		copy[i] = str[i];
 
