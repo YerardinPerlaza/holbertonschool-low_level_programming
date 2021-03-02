@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	char *copy;
 	int i, largo = 0;
 
-	if (str == 0)
+	if (str == NULL)
 		return (NULL);
 
 	while (str[largo] != '\0')
@@ -24,7 +24,7 @@ char *_strdup(char *str)
 	for (i = 0; i <= largo; i++)
 		copy[i] = str[i];
 
-	if (copy == 0)
+	if (copy == NULL)
 		return (NULL);
 
 	return (copy);
