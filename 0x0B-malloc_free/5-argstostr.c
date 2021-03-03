@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * argstostr - check the code for Holberton School students.
+ *@ac: int
+ *@av: char
  * Return: Always 0.
  */
 char *argstostr(int ac, char **av)
