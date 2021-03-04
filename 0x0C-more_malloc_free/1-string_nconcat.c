@@ -45,5 +45,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	news[a + b] = '\0';
 
-	return(news);
+	return (news);
 }
