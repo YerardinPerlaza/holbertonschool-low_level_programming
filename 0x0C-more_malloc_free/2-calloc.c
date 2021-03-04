@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _calloc - check the code for Holberton School students.
+ *@nmemb: unsigned int
+ *@size: unsigned int
  * Return: Always 0.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)

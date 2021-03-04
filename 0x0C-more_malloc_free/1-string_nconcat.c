@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * string_nconcat - function that concatenates two strings
+ *@s1: char
+ *@s2: char
+ *@n: unsigned int
  * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
