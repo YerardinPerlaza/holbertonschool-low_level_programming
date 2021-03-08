@@ -2,11 +2,19 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+ * new_dog - check the code for Holberton School students.
+ *@name: char
+ *@age: float
+ *@owner: char
+ * Return: Always 0.
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_name;
 	char *copy_name, *copy_owner;
 	unsigned int x, name_len = 0, owner_len = 0;
+
 
 	new_name = malloc(sizeof(dog_t));
 	if (name == NULL)
