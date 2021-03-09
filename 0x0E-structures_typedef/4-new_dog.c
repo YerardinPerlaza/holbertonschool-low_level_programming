@@ -16,11 +16,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_name;
 	char *copy_name, *copy_owner;
-	unsigned int x, name_len, owner_len;
-
-	name_len = _strlen(name);
-	owner_len = _strlen(owner);
-
 
 	new_name = malloc(sizeof(dog_t));
 	if (name == NULL)
@@ -31,19 +26,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	copy_name = malloc(sizeof(char) * (name_len + 1));
+	copy_name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (copy_name == NULL)
 		return (NULL);
 
-	copy_owner = malloc(sizeof(char) * (owner_len + 1));
+	copy_owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (copy_owner == NULL)
 		return (NULL);
 
-	for (x = 0; x <= name_len; x++)
-		copy_name[x] = name[x];
-
-	for (x = 0; x <= owner_len; x++)
-		copy_owner[x] = owner[x];
+	copy_name = _strcpy(copy_name, name);
+	copy_owner = _strcpy(copy_owner, owner);
 
 	new_name->name = copy_name;
 	new_name->owner = copy_owner;
