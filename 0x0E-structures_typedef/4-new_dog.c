@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include "dog.h"
 
+int _strlen(char *s);
+char *_strcpy(char *dest, char *src);
+
 /**
  * new_dog - check the code for Holberton School students.
  *@name: char
@@ -13,7 +16,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_name;
 	char *copy_name, *copy_owner;
-	unsigned int x, name_len = 0, owner_len = 0;
+	unsigned int x, name_len, owner_len;
+
+	name_len = _strlen(name);
+	owner_len = _strlen(owner);
 
 
 	new_name = malloc(sizeof(dog_t));
@@ -24,12 +30,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_name);
 		return (NULL);
 	}
-
-	for (x = 0; name[x] != '\0'; x++)
-		name_len++;
-
-	for (x = 0; owner[x] != '\0'; x++)
-		owner_len++;
 
 	copy_name = malloc(sizeof(char) * (name_len + 1));
 	if (copy_name == NULL)
@@ -49,4 +49,36 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_name->owner = copy_owner;
 	new_name->age = age;
 	return (new_name);
+
+}
+
+/**
+ * _strlen - returns the length of a string
+ * @s: get a pointer
+ * Return: return the string
+ */
+int _strlen(char *s)
+{
+	unsigned int c;
+
+	for (c = 0; s[c]; c++)
+		;
+
+	return (c);
+}
+/**
+ * _strcpy - copy the string in src to dest
+ *
+ * @dest: destiny char
+ * @src: source char
+ * Return: copy char in destiny
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int index;
+
+	for (index = 0; src[index] != '\0'; index++)
+		dest[index] = src[index];
+	dest[index] = '\0';
+	return (dest);
 }
