@@ -1,0 +1,1 @@
+Learning variadic fuctions, understanding printf.
