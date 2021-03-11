@@ -3,16 +3,16 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - check the code for Holberton School students.
- *@separator: char pointer is a string
+ * print_strings - check the code for Holberton School students.
+ *@separator: comma space
  *@n: size, unsigned int
  * Return: Always 0.
  */
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
-	int num;
+	char *str;
 
 	if (separator == NULL)
 		return;
@@ -21,10 +21,13 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		num = va_arg(ap, int);
-		printf("%d", num);
-
-		if (i != (n - 1) && separator != NULL)
+		str = va_arg(ap, char *);
+		if (str == NULL)
+		{
+			str = "(nil)";
+		}
+		printf("%s", str);
+		if (i != (n - 1))
 			printf("%s", separator);
 	}
 	printf("\n");
