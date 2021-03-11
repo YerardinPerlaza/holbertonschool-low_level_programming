@@ -14,23 +14,23 @@ int main(int argc, char *argv[])
 	int (*operation)(int, int);
 	char *operator;
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	operator = argv[2];
-
 	if (argc != 4)
 	{
 		printf("%s\n", "Error");
 		exit(98);
 	}
 
-	operation = get_op_func(operator);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	operator = argv[2];
 
 	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
+
+	operation = get_op_func(operator);
 	calc = (*operation)(num1, num2);
 
 	printf("%d\n", calc);
