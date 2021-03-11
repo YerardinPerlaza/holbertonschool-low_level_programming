@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 	};
 	va_list ap;
 	int i = 0, j = 0;
-	char* separator = "";
+	char *separator = "";
 
 	va_start(ap, format);
 
@@ -47,23 +47,45 @@ void print_all(const char * const format, ...)
 	printf("\n");
 
 }
-
+/**
+ * print_char - Entry point
+ *@element: va_list
+ * Return: Always 0 (Success)
+ */
 void print_char(va_list element)
 {
 	printf("%c", va_arg(element, int));
 }
+/**
+ * print_integer - Entry point
+ *@element: va_list
+ * Return: Always 0 (Success)
+ */
 void print_integer(va_list element)
 {
 	printf("%d", va_arg(element, int));
 }
+/**
+ * print_float - Entry point
+ *@element: va_list
+ * Return: Always 0 (Success)
+ */
 void print_float(va_list element)
 {
 	printf("%f", va_arg(element, double));
 }
+/**
+ * print_string - Entry point
+ *@element: va_list
+ * Return: Always 0 (Success)
+ */
 void print_string(va_list element)
 {
 	char *s = va_arg(element, char*);
+
 	if (s == NULL)
+	{
 		s = "(nil)";
+	}
 	printf("%s", s);
 }
