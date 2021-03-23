@@ -3,8 +3,8 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * sum_listint - check the code for Holberton School students.
+ *@head: listint_t
  * Return: Always 0.
  */
 int sum_listint(listint_t *head)
