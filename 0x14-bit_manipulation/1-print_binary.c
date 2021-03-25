@@ -1,34 +1,29 @@
 #include <stdio.h>
 #include "holberton.h"
-
+void print_b(unsigned long int n);
 /**
- * print_binary - check the code for Holberton School students.
- *@n: number unsigned long int
- * Return: Always 0.
+ * print_binary - Prints the binary representation of a number
+ * @n: Number to interpret as binary
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0, count, k, temp;
-
 	if (n == 0)
-	{
 		_putchar('0');
+	else
+		print_b(n);
+}
+
+/**
+ * print_b - Prints the binary representation of a number
+ * @n: Number to interpret as binary
+ */
+void print_b(unsigned long int n)
+{
+	if (n == 0)
 		return;
-	}
-
-	temp = n;
-	while (temp != 0)
-	{
-		i++;
-		temp = temp >> 1;
-	}
-
-	for (count = i - 1; count >= 0; count--)
-	{
-		k = n >> count;
-		if (k & 1)
-			_putchar('1');
-		else
-			_putchar('0');
-	}
+	print_b((n >> 1));
+	if ((n & 1) == 1)
+		_putchar('1');
+	if ((n & 1) == 0)
+		_putchar('0');
 }
