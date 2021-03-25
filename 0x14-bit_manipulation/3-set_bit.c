@@ -10,14 +10,13 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int bits;
+	unsigned long int mask;
 
 	if (n == NULL)
 		return (-1);
 /* Left shift 1, n times and perform bitwise OR with num */
-	bits = 1 << index;
-
-	*n = *n | bits;
-
+	mask = 1;
+	mask = mask << index;
+	*n = ((*n) | mask);
 	return (1);
 }
