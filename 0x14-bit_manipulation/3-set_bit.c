@@ -14,6 +14,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	if (n == NULL)
 		return (-1);
+	if (index > sizeof(unsigned int) * 8)
+		return (-1);
 /* Left shift 1, n times and perform bitwise OR with num */
 	mask = 1;
 	mask = mask << index;
