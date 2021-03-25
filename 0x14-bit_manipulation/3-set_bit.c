@@ -3,8 +3,9 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * set_bit - check the code for Holberton School students.
+ *@n: puntero to number
+ *@index: position
  * Return: Always 0.
  */
 int set_bit(unsigned long int *n, unsigned int index)
