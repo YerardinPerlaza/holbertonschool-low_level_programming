@@ -3,8 +3,8 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * reverse_listint - check the code for Holberton School students.
+ *@head: listint_t
  * Return: Always 0.
  */
 listint_t *reverse_listint(listint_t **head)
