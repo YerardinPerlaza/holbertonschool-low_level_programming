@@ -24,11 +24,11 @@ int create_file(const char *filename, char *text_content)
 	{
 		text_content = "";
 	}
-	else if ((write(fd, text_content, i)) == -1)
-		return (-1);
 	else
 	{
 		write(fd, text_content, i);
+		if (write(fd, text_content, i) == -1)
+			return (-1);
 	}
 
 	close(fd);
