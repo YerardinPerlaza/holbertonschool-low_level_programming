@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * main - check the code for Holberton School students.
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	_printf("ceis", 'H', 0, "lberton");
+	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
 	return (0);
 }
