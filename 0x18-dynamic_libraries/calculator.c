@@ -9,10 +9,7 @@
 
 int add(int a, int b)
 {
-	int suma;
-
-	suma = a + b;
-	return (suma);
+	return (a + b);
 }
 
 /**
@@ -23,10 +20,7 @@ int add(int a, int b)
  */
 int sub(int a, int b)
 {
-	int resta;
-
-	resta = a - b;
-	return (resta);
+	return (a - b);
 }
 /**
  * mul - Entry point
@@ -36,10 +30,7 @@ int sub(int a, int b)
  */
 int mul(int a, int b)
 {
-	int mul;
-
-	mul = a * b;
-	return (mul);
+	return (a * b);
 }
 /**
  * div - Entry point
@@ -49,10 +40,11 @@ int mul(int a, int b)
  */
 int div(int a, int b)
 {
-	int div;
-
-	div = a / b;
-	return (div);
+	if (b <= 0)
+	{
+		return (0);
+	}
+	return (a / b);
 }
 /**
  * mod - Entry point
@@ -62,8 +54,9 @@ int div(int a, int b)
  */
 int mod(int a, int b)
 {
-	int modulo;
-
-	modulo = a + b;
-	return (modulo);
+	if (b <= 0)
+	{
+		return (a);
+	}
+	return (a % b);
 }
